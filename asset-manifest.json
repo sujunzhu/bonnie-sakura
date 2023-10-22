@@ -1,21 +1,18 @@
 {
   "files": {
-    "main.css": "/bonnie-sakura/static/css/main.171b7c02.css",
-    "main.js": "/bonnie-sakura/static/js/main.d3d76380.js",
+    "main.css": "/bonnie-sakura/static/css/main.4c7f9bd0.css",
+    "main.js": "/bonnie-sakura/static/js/main.3109127a.js",
     "static/js/787.a25abcf1.chunk.js": "/bonnie-sakura/static/js/787.a25abcf1.chunk.js",
-    "static/media/Disket-Mono-Bold.ttf": "/bonnie-sakura/static/media/Disket-Mono-Bold.295e11be396c5e39698b.ttf",
-    "static/media/Disket-Mono-Regular.ttf": "/bonnie-sakura/static/media/Disket-Mono-Regular.7377dd2a75631272ed00.ttf",
-    "static/media/Disket-Mono-Regular.woff": "/bonnie-sakura/static/media/Disket-Mono-Regular.1493c427b32a820047da.woff",
-    "static/media/Disket-Mono-Bold.woff": "/bonnie-sakura/static/media/Disket-Mono-Bold.ea7dab7586088a3add5a.woff",
-    "static/media/Disket-Mono-Regular.woff2": "/bonnie-sakura/static/media/Disket-Mono-Regular.20f09c2daede1e4bacf2.woff2",
-    "static/media/Disket-Mono-Bold.woff2": "/bonnie-sakura/static/media/Disket-Mono-Bold.2de5b85143437a8a666a.woff2",
+    "static/media/Imprima-Regular.ttf": "/bonnie-sakura/static/media/Imprima-Regular.1b034ee4658f967a7e2d.ttf",
+    "static/media/Imprima-Regular.woff": "/bonnie-sakura/static/media/Imprima-Regular.c988cdfd72b3132242a6.woff",
+    "static/media/Imprima-Regular.woff2": "/bonnie-sakura/static/media/Imprima-Regular.b3343273512999f49e0c.woff2",
     "index.html": "/bonnie-sakura/index.html",
-    "main.171b7c02.css.map": "/bonnie-sakura/static/css/main.171b7c02.css.map",
-    "main.d3d76380.js.map": "/bonnie-sakura/static/js/main.d3d76380.js.map",
+    "main.4c7f9bd0.css.map": "/bonnie-sakura/static/css/main.4c7f9bd0.css.map",
+    "main.3109127a.js.map": "/bonnie-sakura/static/js/main.3109127a.js.map",
     "787.a25abcf1.chunk.js.map": "/bonnie-sakura/static/js/787.a25abcf1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.171b7c02.css",
-    "static/js/main.d3d76380.js"
+    "static/css/main.4c7f9bd0.css",
+    "static/js/main.3109127a.js"
   ]
 }
