@@ -1,0 +1,16 @@
+/* File: font.css */
+@font-face {
+    font-family: 'DisketMonoRegular';
+    src: local('DisketMonoRegular') 
+        url('../fonts/Disket-Mono-Regular.woff') format('woff'),
+        url('../fonts/Disket-Mono-Regular.woff2') format('woff2'),
+        url('../fonts/Disket-Mono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DisketMonoBold';
+    src: local('DisketMonoBold') 
+        url('../fonts/Disket-Mono-Bold.woff') format('woff'),
+        url('../fonts/Disket-Mono-Bold.woff2') format('woff2'),
+        url('../fonts/Disket-Mono-Bold.ttf') format('truetype');
+}

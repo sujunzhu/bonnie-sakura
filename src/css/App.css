@@ -1,0 +1,14 @@
+@import "font.css";
+
+.body {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'DisketMonoRegular', generic-font;
+  font-size: 2em;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
