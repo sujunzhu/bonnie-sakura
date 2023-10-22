@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/App.css';
+import Intro from './Intro';
 
 /**
  * The React App.
@@ -8,9 +9,7 @@ import '../css/App.css';
 function App() {
   return (
     <div className="body">
-      <div>
-        THIS IS A WEBSITE FOR BONNIE SAKURA
-      </div>
+      <Intro />
     </div>
   );
 }

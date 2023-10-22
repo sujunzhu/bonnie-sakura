@@ -5,10 +5,15 @@
   background-color: black;
   color: white;
   display: flex;
-  flex-direction: column;
-  font-family: 'DisketMonoRegular', generic-font;
-  font-size: 2em;
+  font-family: 'Imprima', generic-font;
+  font-size: 50px;
   height: 100vh;
   justify-content: center;
   width: 100vw;
+}
+
+.intro {
+  max-width: 1013px;
+  margin: 5px;
+  text-align: center;
 }
