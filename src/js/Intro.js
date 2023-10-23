@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/intro.css';
+import '../css/Intro.css';
 
 const localizedText = {
   intro1: 'Hi, I am Xiaofan',
