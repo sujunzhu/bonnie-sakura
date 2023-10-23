@@ -1,8 +1,10 @@
 @import "font.css";
+@import "scrollbar.css";
 
 body {
-  height: 100vh;
   margin: 0;
-  overflow: hidden;
-  width: 100vw;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+  font-family: 'Imprima', generic-font;
 }

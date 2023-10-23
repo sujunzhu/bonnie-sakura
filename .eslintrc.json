@@ -15,5 +15,6 @@
         "react"
     ],
     "rules": {
+        "max-len": ["error", 120]
     }
 }

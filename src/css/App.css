@@ -1,19 +1,11 @@
-@import "font.css";
-
-.body {
-  align-items: center;
-  background-color: black;
-  color: white;
-  display: flex;
-  font-family: 'Imprima', generic-font;
-  font-size: 50px;
-  height: 100vh;
-  justify-content: center;
+.portfolio-container {
+  height: calc(100vh + 100px);
   width: 100vw;
 }
 
-.intro {
-  max-width: 1013px;
-  margin: 5px;
-  text-align: center;
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }

@@ -1,0 +1,37 @@
+.intro-container {
+  font-family: 'Imprima', generic-font;
+}
+
+.intro-text-container {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: 50px;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.intro {
+  max-width: 1013px;
+  padding: 5px;
+  text-align: center;
+}
+
+.scroll-down-prompt {
+  color: white;
+  position: fixed;
+  left: calc(50% - 100px);
+  bottom: 15%;
+  text-align: center;
+  width: 200px;
+  animation: animateScrollDownPrompt 1s 2;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animateScrollDownPrompt {
+  0%   {bottom: 15%; }
+  100%  {bottom: 18%; }
+}
