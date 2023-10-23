@@ -1,6 +1,7 @@
 import React, {useEffect, useState, useCallback} from 'react';
 import '../css/App.css';
 import Intro from './Intro';
+import SiteNav from './SiteNav';
 import Gallery from './Gallery';
 import Preview from './Preview';
 import Detail from './Detail';
@@ -93,6 +94,12 @@ function App() {
         isIntro &&
         <div className="intro-layover">
           <Intro />
+        </div>
+      }
+      {
+        (isGallery || isPreview || isDetail) &&
+        <div>
+          <SiteNav />
         </div>
       }
       {

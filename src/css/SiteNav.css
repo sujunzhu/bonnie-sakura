@@ -1,0 +1,61 @@
+.sitenav-container {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  line-height: 22px;
+  align-items: center;
+}
+
+a {
+  all: unset;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  all: unset;
+}
+
+.title {
+  margin: 0 66px;
+  text-align: center;
+}
+
+.projects {
+  margin-left: auto;
+  margin-right: 24px;
+  text-align: center;
+}
+
+.writing {
+  margin-right: 24px;
+  text-align: center;
+}
+
+.about {
+  margin-right: 24px;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  height: 22px;
+  width: 22px;
+  background-image: url(../../public/favicon.ico);
+  background-size: contain;
+  margin-right: 66px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .projects,
+  .writing,
+  .about {
+    display: none;
+  }
+
+  .logo {
+    margin-left: auto;
+  }
+}
