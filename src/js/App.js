@@ -62,10 +62,12 @@ function App() {
 
   let ts;
   const handleTouchStart = useCallback((event) => {
-    console.log(event);
     ts = event.touches[0].clientY;
   });
   const handleTouchMove = useCallback((event) => {
+    if (event.target.dataset.disableTouch) {
+      return;
+    }
     const te = event.changedTouches[0].clientY;
     if (ts > te) {
       setState(nextState(state));

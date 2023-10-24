@@ -1,9 +1,86 @@
 .preview-container {
-  color: white;
-  font-family: 'Imprima', generic-font;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  color: white;
+  display: flex;
+  font-family: 'Imprima', generic-font;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.preview-img {
+  bottom: 4vh;
+  height: auto;
+  max-height: 90vh;
+  max-width: 100%;
+  position: relative;
+  width: auto;
+}
+
+.preview-nav {
+  align-items: center;
+  background-color: black;
+  bottom: 0;
+  display: inline-flex;
+  height: 18vh;
+  min-height: 100px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+.nav-cards-container {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  height: 80%;
+  padding: calc(50vw - 150px);
+}
+
+.nav-card {
+  align-items: center;
+  display: inline-flex;
+  height: 100%;
+  margin-left: 48px;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+
+  .title {
+    align-items: center;
+    background: rgba(29, 106, 154, 0.72);
+    border: 0;
+    bottom: 0;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .title {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  img {
+    height: 80%;
+    width: 200px;
+  }
 }
