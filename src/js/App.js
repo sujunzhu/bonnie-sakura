@@ -43,7 +43,6 @@ function App() {
   const isDetail = state[0] === STATE.DETAIL;
 
   const handleWheel = useCallback((event) => {
-    event.preventDefault();
     if (event.target.dataset.disableTouch) {
       return;
     }
