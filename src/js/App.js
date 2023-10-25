@@ -43,6 +43,10 @@ function App() {
   const isDetail = state[0] === STATE.DETAIL;
 
   const handleWheel = useCallback((event) => {
+    event.preventDefault();
+    if (event.target.dataset.disableTouch) {
+      return;
+    }
     const next = event.deltaY > 0 ? nextState(state) : prevState(state);
     if (next[0] === state[0]) {
       return;
@@ -59,9 +63,9 @@ function App() {
       return;
     }
     const te = event.changedTouches[0].clientY;
-    if (ts - te > 50) {
+    if (ts > te) {
       setState(nextState(state));
-    } else if (ts - te < -50) {
+    } else if (ts < te) {
       setState(prevState(state));
     }
   });
