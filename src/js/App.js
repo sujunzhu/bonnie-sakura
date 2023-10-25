@@ -13,7 +13,7 @@ const STATE = {
   DETAIL: 'DETAIL',
 };
 
-const FLOW = Object.values(STATE);
+const FLOW = [STATE.INTRO, STATE.GALLERY, STATE.PREVIEW];
 const prevState = (currentState) => {
   const curIdx = FLOW.indexOf(currentState[0]);
 
@@ -43,7 +43,7 @@ function App() {
   const isDetail = state[0] === STATE.DETAIL;
 
   const handleWheel = useCallback((event) => {
-    if (event.target.dataset.disableTouch) {
+    if (event.target.dataset.disableTouch || FLOW.indexOf(state[0]) == -1) {
       return;
     }
     const next = event.deltaY > 0 ? nextState(state) : prevState(state);
@@ -55,10 +55,13 @@ function App() {
 
   let ts;
   const handleTouchStart = useCallback((event) => {
+    if (event.target.dataset.disableTouch || FLOW.indexOf(state[0]) == -1) {
+      return;
+    }
     ts = event.touches[0].clientY;
   });
   const handleTouchEnd = useCallback((event) => {
-    if (event.target.dataset.disableTouch) {
+    if (event.target.dataset.disableTouch || FLOW.indexOf(state[0]) == -1) {
       return;
     }
     const te = event.changedTouches[0].clientY;
@@ -104,7 +107,7 @@ function App() {
       {
         isPreview &&
         <div className="preview-page">
-          <Preview />
+          <Preview goToDetail={() => setState([STATE.DETAIL])}/>
         </div>
       }
       {

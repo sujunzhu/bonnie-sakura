@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import PropTypes from 'prop-types';
 import '../css/Preview.css';
 
 const images = [
@@ -34,11 +35,16 @@ const images = [
   },
 ];
 
+const propTypes = {
+  goToDetail: PropTypes.func.isRequired,
+};
+
 /**
  * The Preview page.
+ * @param {Object} props - props
  * @return {Node} the preview page
  */
-const Preview = () => {
+const Preview = (props) => {
   const [selected, setSelected] = useState(0);
 
   const navCards = images.map((image) => (
@@ -58,6 +64,7 @@ const Preview = () => {
       <img
         className='preview-img'
         src={images[selected].src}
+        onClick={() => props.goToDetail()}
       />
       <div className='preview-nav' data-disable-touch={true}>
         <div className='nav-cards-container' data-disable-touch={true}>
@@ -67,5 +74,7 @@ const Preview = () => {
     </div>
   );
 };
+
+Preview.propTypes = propTypes;
 
 export default Preview;
