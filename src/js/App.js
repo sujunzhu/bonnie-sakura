@@ -16,7 +16,9 @@ const STATE = {
 const FLOW = Object.values(STATE);
 const prevState = (currentState) => {
   const curIdx = FLOW.indexOf(currentState[0]);
-  if (curIdx === 0) {
+
+  // Per PM request, we don't wanna go back to previous page after hitting preview.
+  if (curIdx <= 2) {
     return [FLOW[curIdx]];
   }
   return [FLOW[curIdx - 1]];
@@ -40,18 +42,6 @@ function App() {
   const isPreview = state[0] === STATE.PREVIEW;
   const isDetail = state[0] === STATE.DETAIL;
 
-  const handleKeyDown = useCallback((event) => {
-    console.log(event);
-    if (event.code === 'Enter' ||
-      event.code === 'ArrowDown' ||
-      event.code === 'PageDown' ||
-      event.code === 'ArrowRight'
-    ) {
-      setState(nextState(state));
-    } else if (event.code === 'ArrowUp' || event.code === 'PageUp' || event.code === 'ArrowLeft') {
-      setState(prevState(state));
-    }
-  }, [state]);
   const handleWheel = useCallback((event) => {
     const next = event.deltaY > 0 ? nextState(state) : prevState(state);
     if (next[0] === state[0]) {
@@ -64,7 +54,7 @@ function App() {
   const handleTouchStart = useCallback((event) => {
     ts = event.touches[0].clientY;
   });
-  const handleTouchMove = useCallback((event) => {
+  const handleTouchEnd = useCallback((event) => {
     if (event.target.dataset.disableTouch) {
       return;
     }
@@ -77,13 +67,11 @@ function App() {
   });
 
   useEffect(() => {
-    window.addEventListener('keydown', handleKeyDown);
     window.addEventListener('touchstart', handleTouchStart);
-    window.addEventListener('touchmove', handleTouchMove);
+    window.addEventListener('touchend', handleTouchEnd);
     return () => {
-      window.removeEventListener('keydown', handleKeyDown);
       window.removeEventListener('touchstart', handleTouchStart);
-      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
     };
   }, [state]);
 

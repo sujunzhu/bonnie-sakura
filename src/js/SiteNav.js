@@ -17,7 +17,7 @@ const link = 'https://www.xiaofanye.com';
 const SiteNav = () => (
   <div className='sitenav-container'>
     <div className='title'>
-      <a href="javascript:window.location.reload(true)">
+      <a href=".">
         {localizedText.title}
       </a>
     </div>
