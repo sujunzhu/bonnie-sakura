@@ -59,9 +59,9 @@ function App() {
       return;
     }
     const te = event.changedTouches[0].clientY;
-    if (ts > te) {
+    if (ts - te > 50) {
       setState(nextState(state));
-    } else if (ts < te) {
+    } else if (ts - te < -50) {
       setState(prevState(state));
     }
   });
