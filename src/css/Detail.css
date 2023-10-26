@@ -7,3 +7,105 @@
   justify-content: center;
   align-items: center;
 }
+
+.detail-nav {
+  align-items: center;
+  background-color: black;
+  bottom: 0;
+  display: inline-flex;
+  flex-direction: column;
+  height: calc(100vh - 64px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  width: 240px;
+  z-index: 20;
+}
+
+.detail-nav .nav-toggle {
+  position: fixed;
+  top: 48%;
+  right: 0;
+  cursor: pointer;
+  width: 40px;
+  overflow: hidden;
+  animation: animateDetailNavToggle 1s 2;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+  img {
+    object-fit: contain;
+  }
+}
+
+@keyframes animateDetailNavToggle {
+  0% {
+    top: 48%;
+  }
+
+  100% {
+    top: 52%;
+  }
+}
+
+
+.detail-nav .nav-cards-container {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: auto;
+  padding: 4px 0 16px 0;
+  width: 200px;
+}
+
+.detail-nav .nav-card {
+  align-items: center;
+  display: inline-flex;
+  margin-bottom: 20px;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .title {
+    align-items: center;
+    background: rgba(29, 106, 154, 0.72);
+    border: 0;
+    bottom: 0;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(29, 106, 154, 0.48);
+
+    .title {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  img {
+    height: 80%;
+    width: 200px;
+  }
+}

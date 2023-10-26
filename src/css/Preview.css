@@ -8,7 +8,7 @@
   width: 100vw;
 }
 
-.preview-img {
+.preview-container .preview-img {
   bottom: 4vh;
   cursor: pointer;
   height: auto;
@@ -18,29 +18,29 @@
   width: auto;
 }
 
-.preview-nav {
+.preview-container .preview-nav {
   align-items: center;
   background-color: black;
   bottom: 0;
   display: inline-flex;
   height: 18vh;
   min-height: 100px;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
   position: fixed;
   width: 100%;
   z-index: 20;
 }
 
-.nav-cards-container {
+.preview-container .nav-cards-container {
   align-items: center;
   display: inline-flex;
   flex-wrap: nowrap;
   height: 80%;
-  padding: calc(50vw - 150px);
+  padding: 0 calc(50vw - 150px);
 }
 
-.nav-card {
+.preview-container .nav-card {
   align-items: center;
   display: inline-flex;
   height: 100%;
@@ -69,6 +69,10 @@
 
     /* transition effect. not necessary */
     transition: opacity .2s, visibility .2s;
+  }
+
+  &.selected {
+    box-shadow: 5px 5px 5px rgba(29, 106, 154, 0.48);
   }
 
   &:hover {

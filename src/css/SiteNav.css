@@ -7,7 +7,7 @@
   align-items: center;
   flex-wrap: nowrap;
   background-color: black;
-  z-index: 20;
+  z-index: 100;
 }
 
 a {
