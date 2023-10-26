@@ -40,6 +40,27 @@
   padding: 0 calc(50vw - 150px);
 }
 
+.preview-container .nav-card .title {
+  align-items: center;
+  background: rgba(29, 106, 154, 0.72);
+  border: 0;
+  bottom: 0;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
 .preview-container .nav-card {
   align-items: center;
   display: inline-flex;
@@ -49,27 +70,6 @@
   overflow: hidden;
   position: relative;
   width: 200px;
-
-  .title {
-    align-items: center;
-    background: rgba(29, 106, 154, 0.72);
-    border: 0;
-    bottom: 0;
-    color: #fff;
-    display: inline-flex;
-    justify-content: center;
-    left: 0;
-    margin: 0;
-    opacity: 0;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    visibility: hidden;
-
-    /* transition effect. not necessary */
-    transition: opacity .2s, visibility .2s;
-  }
 
   &.selected {
     box-shadow: 5px 5px 5px rgba(29, 106, 154, 0.48);
