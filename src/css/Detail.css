@@ -14,13 +14,18 @@
   bottom: 0;
   display: inline-flex;
   flex-direction: column;
-  height: calc(100vh - 64px);
+  height: 40px;
   overflow-x: hidden;
   overflow-y: auto;
   position: fixed;
   right: 0;
-  width: 240px;
+  width: 40px;
   z-index: 20;
+
+  &.show-nav {
+    height: calc(100vh - 64px);
+    width: 240px;
+  }
 }
 
 .detail-nav .nav-toggle {

@@ -2,6 +2,7 @@ import React, {useState, useRef, useCallback} from 'react';
 import useOutsideClick from './hooks/useOutsideClick';
 import '../css/Detail.css';
 import {PROJECTS} from './ProjectUtils';
+import classnames from './utils/classnames';
 
 /**
  * The Detail page.
@@ -61,10 +62,14 @@ const Detail = () => {
     ) :
     null;
 
+  const detailNavClassName = classnames('detail-nav', {
+    'show-nav': showNav,
+  });
+
   return (
     <div className='detail-container'>
       {PROJECTS[selected].title}
-      <div className='detail-nav' data-disable-touch={true} ref={navRef}>
+      <div className={detailNavClassName} data-disable-touch={true} ref={navRef}>
         {showNavButton}
         {navCardsComp}
       </div>

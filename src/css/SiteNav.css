@@ -1,4 +1,9 @@
 .sitenav-container {
+  position: absolute;
+  width: 100vw;
+}
+
+.sitenav-container .normal-menu {
   display: flex;
   position: fixed;
   width: 100%;
@@ -22,28 +27,28 @@
   all: unset;
 }
 
-.sitenav-container .title {
+.sitenav-container .normal-menu .title {
   margin: 0 66px;
   text-align: center;
 }
 
-.sitenav-container .projects {
+.sitenav-container .normal-menu .projects {
   margin-left: auto;
   margin-right: 24px;
   text-align: center;
 }
 
-.sitenav-container .writing {
+.sitenav-container .normal-menu .writing {
   margin-right: 24px;
   text-align: center;
 }
 
-.sitenav-container .about {
+.sitenav-container .normal-menu .about {
   margin-right: 24px;
   text-align: center;
 }
 
-.sitenav-container .logo {
+.sitenav-container .normal-menu .more {
   text-align: center;
   height: 22px;
   width: 22px;
@@ -52,25 +57,47 @@
   margin-right: 66px;
 }
 
+.sitenav-container .hamburger-menu {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
 
-  .sitenav-container .projects,
-  .sitenav-container .writing,
-  .sitenav-container .about {
+  .sitenav-container .normal-menu .projects,
+  .sitenav-container .normal-menu .writing,
+  .sitenav-container .normal-menu .about {
     display: none;
   }
 
-  .sitenav-container .logo {
+  .sitenav-container .normal-menu .more {
     margin-left: auto;
+  }
+
+  .sitenav-container .hamburger-menu {
+    display: block;
+    padding-top: 64px;
+  }
+
+  .sitenav-container .hamburger-menu .projects,
+  .sitenav-container .hamburger-menu .writing,
+  .sitenav-container .hamburger-menu .about {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    position: relative;
+    text-decoration: underline;
+    z-index: 100;
   }
 }
 
 @media only screen and (max-width: 300px) {
-  .sitenav-container .title {
+  .sitenav-container .normal-menu .title {
     margin: auto;
   }
 
-  .sitenav-container .logo {
-    display: none;
+  .sitenav-container .normal-menu .more {
+    margin: auto;
   }
 }
