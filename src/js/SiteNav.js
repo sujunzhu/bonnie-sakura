@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../css/SiteNav.css';
 
 const localizedText = {
@@ -10,11 +11,16 @@ const localizedText = {
 
 const link = 'https://www.xiaofanye.com';
 
+const propTypes = {
+  handleProjectsClick: PropTypes.func.isRequired,
+};
+
 /**
  * The Site Nav.
+ * @param {Object} props
  * @return {Node} the site nav
  */
-const SiteNav = () => (
+const SiteNav = (props) => (
   <div className='sitenav-container'>
     <div className='title'>
       <a href=".">
@@ -22,9 +28,9 @@ const SiteNav = () => (
       </a>
     </div>
     <div className='projects'>
-      <a href={link} >
+      <button onClick={() => props.handleProjectsClick()} >
         {localizedText.projects}
-      </a>
+      </button>
     </div>
     <div className='writing'>
       <a href={link} >
@@ -39,5 +45,7 @@ const SiteNav = () => (
     <a className='logo' href={link} />
   </div>
 );
+
+SiteNav.propTypes = propTypes;
 
 export default SiteNav;

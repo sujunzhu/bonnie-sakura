@@ -10,13 +10,15 @@
   z-index: 100;
 }
 
-.sitenav-container a {
+.sitenav-container a,
+.sitenav-container button {
   all: unset;
   text-decoration: none;
   cursor: pointer;
 }
 
-.sitenav-container a:visited {
+.sitenav-container a:visited,
+.sitenav-container button:visited {
   all: unset;
 }
 

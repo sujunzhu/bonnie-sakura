@@ -95,7 +95,7 @@ function App() {
       {
         (isGallery || isPreview || isDetail) &&
         <div>
-          <SiteNav />
+          <SiteNav handleProjectsClick={() => setState([STATE.PREVIEW])}/>
         </div>
       }
       {
