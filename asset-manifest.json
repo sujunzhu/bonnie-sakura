@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/bonnie-sakura/static/css/main.44897809.css",
-    "main.js": "/bonnie-sakura/static/js/main.73653389.js",
+    "main.css": "/bonnie-sakura/static/css/main.cc933170.css",
+    "main.js": "/bonnie-sakura/static/js/main.8433fa44.js",
     "static/js/787.a25abcf1.chunk.js": "/bonnie-sakura/static/js/787.a25abcf1.chunk.js",
     "static/media/Imprima-Regular.ttf": "/bonnie-sakura/static/media/Imprima-Regular.1b034ee4658f967a7e2d.ttf",
     "static/media/Imprima-Regular.woff": "/bonnie-sakura/static/media/Imprima-Regular.c988cdfd72b3132242a6.woff",
     "static/media/Imprima-Regular.woff2": "/bonnie-sakura/static/media/Imprima-Regular.b3343273512999f49e0c.woff2",
     "static/media/favicon.ico": "/bonnie-sakura/static/media/favicon.2c05c059300547b06f1f.ico",
     "index.html": "/bonnie-sakura/index.html",
-    "main.44897809.css.map": "/bonnie-sakura/static/css/main.44897809.css.map",
-    "main.73653389.js.map": "/bonnie-sakura/static/js/main.73653389.js.map",
+    "main.cc933170.css.map": "/bonnie-sakura/static/css/main.cc933170.css.map",
+    "main.8433fa44.js.map": "/bonnie-sakura/static/js/main.8433fa44.js.map",
     "787.a25abcf1.chunk.js.map": "/bonnie-sakura/static/js/787.a25abcf1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44897809.css",
-    "static/js/main.73653389.js"
+    "static/css/main.cc933170.css",
+    "static/js/main.8433fa44.js"
   ]
 }
