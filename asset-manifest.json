@@ -1,7 +1,12 @@
 {
   "files": {
     "main.css": "/bonnie-sakura/static/css/main.847617fa.css",
-    "main.js": "/bonnie-sakura/static/js/main.a3c1bbca.js",
+    "main.js": "/bonnie-sakura/static/js/main.12282718.js",
+    "static/js/872.dcc5b84a.chunk.js": "/bonnie-sakura/static/js/872.dcc5b84a.chunk.js",
+    "static/js/227.5a1bc961.chunk.js": "/bonnie-sakura/static/js/227.5a1bc961.chunk.js",
+    "static/js/526.df3bff75.chunk.js": "/bonnie-sakura/static/js/526.df3bff75.chunk.js",
+    "static/js/232.e41f4229.chunk.js": "/bonnie-sakura/static/js/232.e41f4229.chunk.js",
+    "static/js/237.37d18806.chunk.js": "/bonnie-sakura/static/js/237.37d18806.chunk.js",
     "static/js/787.a25abcf1.chunk.js": "/bonnie-sakura/static/js/787.a25abcf1.chunk.js",
     "static/media/Imprima-Regular.ttf": "/bonnie-sakura/static/media/Imprima-Regular.1b034ee4658f967a7e2d.ttf",
     "static/media/Imprima-Regular.woff": "/bonnie-sakura/static/media/Imprima-Regular.c988cdfd72b3132242a6.woff",
@@ -9,11 +14,16 @@
     "static/media/favicon.ico": "/bonnie-sakura/static/media/favicon.2c05c059300547b06f1f.ico",
     "index.html": "/bonnie-sakura/index.html",
     "main.847617fa.css.map": "/bonnie-sakura/static/css/main.847617fa.css.map",
-    "main.a3c1bbca.js.map": "/bonnie-sakura/static/js/main.a3c1bbca.js.map",
+    "main.12282718.js.map": "/bonnie-sakura/static/js/main.12282718.js.map",
+    "872.dcc5b84a.chunk.js.map": "/bonnie-sakura/static/js/872.dcc5b84a.chunk.js.map",
+    "227.5a1bc961.chunk.js.map": "/bonnie-sakura/static/js/227.5a1bc961.chunk.js.map",
+    "526.df3bff75.chunk.js.map": "/bonnie-sakura/static/js/526.df3bff75.chunk.js.map",
+    "232.e41f4229.chunk.js.map": "/bonnie-sakura/static/js/232.e41f4229.chunk.js.map",
+    "237.37d18806.chunk.js.map": "/bonnie-sakura/static/js/237.37d18806.chunk.js.map",
     "787.a25abcf1.chunk.js.map": "/bonnie-sakura/static/js/787.a25abcf1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.847617fa.css",
-    "static/js/main.a3c1bbca.js"
+    "static/js/main.12282718.js"
   ]
 }
